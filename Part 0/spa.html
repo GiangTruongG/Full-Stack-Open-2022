@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA</title>
+</head>
+<body>
+    <pre class="mermaid">
+        sequenceDiagram
+            participant browser
+            participant server
+
+            browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa
+            activate server
+            server-->>browser: HTML document
+            deactivate server
+
+            browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+            activate server
+            server-->>browser: the css file
+            deactivate server
+
+            browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+            activate server
+            server-->>browser: the JavaScript file
+            deactivate server
+
+            Note right of browser: The browser starts executing the JavaScript code that fetches the JSON from the server
+
+            browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+            activate server
+            server-->>browser: [{ "content":"Hola desde Venezuela","date":"2023-04-15T15:21:50.580Z" }, ... ]
+            deactivate server
+
+            Note right of browser: The browser executes the callback function that renders the notes
+    </pre>
+</body>
+
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  </script>
+</html>

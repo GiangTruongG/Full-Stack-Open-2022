@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new_note_spa</title>
+</head>
+<body>
+    <pre class="mermaid">
+        sequenceDiagram
+            participant browser
+            participant server
+
+            browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+            activate server
+            server-->>browser: {"message":"note created"}
+            deactivate server
+    </pre>
+</body>
+
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  </script>
+</html>
