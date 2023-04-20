@@ -1,0 +1,7 @@
+body {
+    background-color: white;
+}
+
+.App h3, h4, button {
+    margin: 20px 10px;
+}
