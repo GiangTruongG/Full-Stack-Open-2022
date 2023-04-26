@@ -1,0 +1,27 @@
+h2, form, p, span {
+    margin: 20px 10px;
+}
+
+button {
+    padding: 3px 5px;
+}
+
+.notification {
+    color: green;
+    background-color: rgb(190, 207, 190);
+    border: 3px solid rgb(7, 173, 7);
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.error {
+    color: red;
+    background-color: rgb(190, 207, 190);
+    border: 3px solid rgb(221, 61, 61);
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}

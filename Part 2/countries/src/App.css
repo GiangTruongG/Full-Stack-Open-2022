@@ -1,0 +1,24 @@
+body {
+    padding: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+li {
+    margin: 5px 20px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+button {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+h3 {
+    margin: 20px 0;
+}
