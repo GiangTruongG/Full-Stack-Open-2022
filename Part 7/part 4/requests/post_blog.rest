@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ikphc21pbmUgQnVpIiwiaWQiOiI2NDc4OTM2MWI4NmFiOTMwYmYyMzc2N2YiLCJpYXQiOjE2ODU3NTExODl9.zVtHVvebAwchWq2AwYXAxCG6ayrv4XwCoN_jU3Hycoo
+
+{
+    "title": "This is the eighth blog!",
+    "author": "Jess",
+    "url": "33",
+    "likes": 22
+}
